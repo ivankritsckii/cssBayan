@@ -2,11 +2,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 15px;
 }
 header{
-    font-size: 50px;
+    font-size: 3em;
 }
-.all_meme_wraper{
+.all_meme_wraper{ 
     color: blue;
 }
 .all_meme_wraper:hover{
@@ -23,29 +24,35 @@ header{
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    width: 500px;
+    width: 30em;
 }
 
-.name_meme{
-    font-size: 20px;
+.meme_name{
+    font-size: 2em;
 }
+
 .icons{
     display: none;
 }
 .meme_icon_active{
     display: none;
 }
+img{
+    width: 30em;
+}
 .meme1,
 .meme2,
 .meme3,
 .meme4{
     display: none;
+    transition: 1s;
 }
 .meme_wraper:hover .meme1,
 .meme_wraper:hover .meme2,
 .meme_wraper:hover .meme3,
 .meme_wraper:hover .meme4 {
     display: block;
+    transition: 1s;
 }
 #btnControl,
 #btnControl1,
@@ -84,4 +91,13 @@ header{
 .meme_wraper:active .btn{
     color: blue;
 }
-
+@media screen and (max-width: 800px){
+    body{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 400px){
+    body{
+        font-size: 8px;
+    }
+}
