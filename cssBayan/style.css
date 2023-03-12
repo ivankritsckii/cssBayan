@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    font-size: 50px;
+}
+.all_meme_wraper{
+    color: blue;
+}
+.all_meme_wraper:hover{
+    color: black;
+}
+.meme_wraper{
+    display: flex;
+    flex-direction: column;
+}
+.opener_meme{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 500px;
+}
+.name_meme{
+    font-size: 20px;
+}
+.meme1{
+    display: none;
+}
+.meme_wraper:hover .meme1 {
+    display: block;
+}
