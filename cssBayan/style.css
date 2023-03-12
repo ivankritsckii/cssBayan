@@ -12,6 +12,9 @@ header{
 .all_meme_wraper:hover{
     color: black;
 }
+.all_meme_wraper:hover .icons{
+    display: block;
+}
 .meme_wraper{
     display: flex;
     flex-direction: column;
@@ -22,28 +25,26 @@ header{
     cursor: pointer;
     width: 500px;
 }
+
 .name_meme{
     font-size: 20px;
+}
+.icons{
+    display: none;
+}
+.meme_icon_active{
+    display: none;
 }
 .meme1,
 .meme2{
     display: none;
 }
-
-
-.meme_wraper:hover .meme1 {
-    display: block;
-}
+.meme_wraper:hover .meme1,
 .meme_wraper:hover .meme2 {
     display: block;
 }
-#btnControl{
-    display: none;
-}
+#btnControl,
 #btnControl1{
-    display: none;
-}
-.meme_icon_active{
     display: none;
 }
 #btnControl:checked+.btn>.meme1,
@@ -52,14 +53,21 @@ header{
     display: block;
 }
  
-#btnControl:checked+.btn>.opener_meme>.meme_icon_active,
-#btnControl1:checked+.btn>.opener_meme>.meme_icon_active,
+#btnControl:checked+.btn,
+#btnControl1:checked+.btn{
+    color: black;
+}
+#btnControl:checked+.btn>.opener_meme>.icons>.meme_icon_active,
+#btnControl1:checked+.btn>.opener_meme>.icons>.meme_icon_active,
 .meme_wraper:hover .meme_icon_active {
     display: block;
 }
-#btnControl:checked+.btn>.opener_meme>.meme_icon,
-#btnControl1:checked+.btn>.opener_meme>.meme_icon,
+#btnControl:checked+.btn>.opener_meme>.icons>.meme_icon,
+#btnControl1:checked+.btn>.opener_meme>.icons>.meme_icon,
 .meme_wraper:hover .meme_icon {
     display: none;
+}
+.meme_wraper:active .btn{
+    color: blue;
 }
 
