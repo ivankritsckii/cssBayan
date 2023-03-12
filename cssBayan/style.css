@@ -25,9 +25,41 @@ header{
 .name_meme{
     font-size: 20px;
 }
-.meme1{
+.meme1,
+.meme2{
     display: none;
 }
+
+
 .meme_wraper:hover .meme1 {
     display: block;
 }
+.meme_wraper:hover .meme2 {
+    display: block;
+}
+#btnControl{
+    display: none;
+}
+#btnControl1{
+    display: none;
+}
+.meme_icon_active{
+    display: none;
+}
+#btnControl:checked+.btn>.meme1,
+#btnControl1:checked+.btn>.meme2
+ {
+    display: block;
+}
+ 
+#btnControl:checked+.btn>.opener_meme>.meme_icon_active,
+#btnControl1:checked+.btn>.opener_meme>.meme_icon_active,
+.meme_wraper:hover .meme_icon_active {
+    display: block;
+}
+#btnControl:checked+.btn>.opener_meme>.meme_icon,
+#btnControl1:checked+.btn>.opener_meme>.meme_icon,
+.meme_wraper:hover .meme_icon {
+    display: none;
+}
+
