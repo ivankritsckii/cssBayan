@@ -36,34 +36,41 @@ header{
     display: none;
 }
 .meme1,
-.meme2{
+.meme2,
+.meme3{
     display: none;
 }
 .meme_wraper:hover .meme1,
-.meme_wraper:hover .meme2 {
+.meme_wraper:hover .meme2,
+.meme_wraper:hover .meme3 {
     display: block;
 }
 #btnControl,
-#btnControl1{
+#btnControl1,
+#btnControl2{
     display: none;
 }
 #btnControl:checked+.btn>.meme1,
-#btnControl1:checked+.btn>.meme2
+#btnControl1:checked+.btn>.meme2,
+#btnControl2:checked+.btn>.meme3
  {
     display: block;
 }
  
 #btnControl:checked+.btn,
-#btnControl1:checked+.btn{
+#btnControl1:checked+.btn,
+#btnControl2:checked+.btn{
     color: black;
 }
 #btnControl:checked+.btn>.opener_meme>.icons>.meme_icon_active,
 #btnControl1:checked+.btn>.opener_meme>.icons>.meme_icon_active,
+#btnControl2:checked+.btn>.opener_meme>.icons>.meme_icon_active,
 .meme_wraper:hover .meme_icon_active {
     display: block;
 }
 #btnControl:checked+.btn>.opener_meme>.icons>.meme_icon,
 #btnControl1:checked+.btn>.opener_meme>.icons>.meme_icon,
+#btnControl2:checked+.btn>.opener_meme>.icons>.meme_icon,
 .meme_wraper:hover .meme_icon {
     display: none;
 }
